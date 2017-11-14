@@ -1,0 +1,27 @@
+/**
+ * Sample business network definition.
+ */
+namespace com.khs.billing
+
+asset SampleAsset identified by assetId {
+  o String assetId
+  --> BillingParticipant owner
+  o String value
+}
+
+participant BillingParticipant identified by participantId {
+  o String participantId
+  o String firstName
+  o String lastName
+}
+
+transaction BillingTransaction {
+  --> SampleAsset asset
+  o String newValue
+}
+
+event SampleEvent {
+  --> SampleAsset asset
+  o String oldValue
+  o String newValue
+}
