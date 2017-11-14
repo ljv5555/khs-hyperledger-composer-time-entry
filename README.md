@@ -1,3 +1,13 @@
+# Configuration
+This project can run at https://composer-playground.mybluemix.net/
+
+  *or*
+
+From Debian 9 (64-bit), install docker and docker compose, then as root spin up runtime:
+```
+cat install-hlfv1.sh | bash
+```
+
 # Basic Sample Business Network
 
 > This is the "Hello World" of Hyperledger Composer samples, which demonstrates the core functionality of Hyperledger Composer by changing the value of an asset.
