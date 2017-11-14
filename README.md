@@ -7,6 +7,9 @@ From Debian 9 (64-bit), install docker and docker compose, then as root spin up 
 ```
 cat install-hlfv1.sh | bash
 ```
+open your browser: http://localhost:8080/login
+
+
 
 # Basic Sample Business Network
 
